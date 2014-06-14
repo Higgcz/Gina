@@ -1,4 +1,4 @@
-GIna
+Gina
 ====
 
 Useful library for C++
