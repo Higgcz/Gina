@@ -9,7 +9,7 @@
 #ifndef __Gina__Matrix__hpp__
 #define __Gina__Matrix__hpp__
 
-using namespace api::Matrix;
+using namespace Gina::Matrix;
 
 template <bool _symetric, typename _T>
 ////////////////////////////////////////////////////////////////

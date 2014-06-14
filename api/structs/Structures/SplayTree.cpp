@@ -10,7 +10,7 @@
 
 #include <algorithm>
 
-using namespace api::Structures;
+using namespace Gina::Structures;
 
 Node* SplayTree::leftRotation  ( Node* root )
 {

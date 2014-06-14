@@ -17,7 +17,7 @@
 #include "HashMap.h"
 
 using namespace std;
-using namespace api::Graphs;
+using namespace Gina::Graphs;
 
 // UnionFind
 UnionFind::UnionFind ( size_t dim ) : dim ( dim )

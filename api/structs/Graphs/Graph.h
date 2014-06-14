@@ -20,7 +20,7 @@
 // GRAPHS
 ////////////////////////////////////////////////////////////////////////////////
 
-namespace api {
+namespace Gina {
     namespace Graphs {
         struct Node;
         
@@ -30,7 +30,7 @@ namespace api {
     }
 }
 
-struct api::Graphs::Node {
+struct Gina::Graphs::Node {
     int                 _id;
     std::vector<Node *> _next;
     std::vector<Node *> _prev;
@@ -101,7 +101,7 @@ struct api::Graphs::Node {
     bool operator!= ( const Node &n ) { return n._id != this->_id; }
 };
 
-class api::Graphs::Graph {
+class Gina::Graphs::Graph {
 public:
     typedef std::vector<Node*> nodes_t;
     typedef nodes_t::iterator  nodes_it;
@@ -197,7 +197,7 @@ public:
     
 };
 
-class api::Graphs::MatrixDefinedGraph : public Graph {
+class Gina::Graphs::MatrixDefinedGraph : public Graph {
     SquareMatrix<true, int>* _vals;
 public:
     
@@ -239,7 +239,7 @@ public:
 
 };
 
-class api::Graphs::DirectedGraph : public Graph {
+class Gina::Graphs::DirectedGraph : public Graph {
 public:
     DirectedGraph ():                         Graph ()       {};
     DirectedGraph ( const DirectedGraph &g ): Graph ( g )    {};

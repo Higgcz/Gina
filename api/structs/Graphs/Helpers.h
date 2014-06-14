@@ -13,7 +13,7 @@
 #include <vector>
 #include "Graph.h"
 
-namespace api {
+namespace Gina {
     namespace Graphs {
         class UnionFind;
         struct Node;
@@ -24,7 +24,7 @@ namespace api {
     }
 }
 
-class api::Graphs::UnionFind {
+class Gina::Graphs::UnionFind {
     size_t dim;
     
     aval* parentForNode;
@@ -40,7 +40,7 @@ public:
     inline size_t size () const { return dim; };
 };
 
-//namespace api {
+//namespace Gina {
 //    namespace Graphs {
 //
 //        typedef std::vector<uint>            map_t;
@@ -49,7 +49,7 @@ public:
 //    }
 //}
 //
-class api::Graphs::Helpers {
+class Gina::Graphs::Helpers {
 //
 //    static const int    NO_SOL = -1;
 //

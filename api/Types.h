@@ -9,7 +9,7 @@
 #ifndef __Gina__Types_h__
 #define __Gina__Types_h__
 
-namespace api {
+namespace Gina {
     typedef unsigned int uint;
 }
 

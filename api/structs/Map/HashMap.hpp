@@ -9,7 +9,7 @@
 #ifndef __Gina__HashMap__hpp__
 #define __Gina__HashMap__hpp__
 
-using namespace api::Map;
+using namespace Gina::Map;
 
 template < typename K, typename V, typename F >
 HashMap<K, V, F>::HashMap ( const size_t size ) : _size ( size )

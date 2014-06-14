@@ -10,7 +10,7 @@
 
 #include "AVLTree.h"
 
-using namespace api::Structures;
+using namespace Gina::Structures;
 
 Node* AVLTree::leftRotation  ( Node* root )
 {

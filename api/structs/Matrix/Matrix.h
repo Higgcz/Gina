@@ -14,7 +14,7 @@
 
 #include "Types.h"
 
-namespace api {
+namespace Gina {
     namespace Matrix {
         template <bool _symetric, typename _T> class SquareMatrix;
     }
@@ -25,7 +25,7 @@ namespace api {
 ////////////////////////////////////////////////////////////////////////////////
 
 template <bool _symetric = false, typename _T = int>
-class api::Matrix::SquareMatrix {
+class Gina::Matrix::SquareMatrix {
     _T*          _vals;
     const size_t _size;
     const bool   _symetricFlag   = _symetric;

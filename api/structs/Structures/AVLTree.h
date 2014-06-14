@@ -13,13 +13,13 @@
 
 #include "Tree.h"
 
-namespace api {
+namespace Gina {
     namespace Structures {
         class AVLTree;
     }
 }
 
-class api::Structures::AVLTree : public Tree {
+class Gina::Structures::AVLTree : public Tree {
     
 public:
     virtual void  insertNode  ( Node *n );

@@ -11,7 +11,7 @@
 #include "Tree.h"
 
 using namespace std;
-using namespace api::Structures;
+using namespace Gina::Structures;
 
 void Node::setLeft ( Node *left )
 {

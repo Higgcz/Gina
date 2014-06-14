@@ -6,7 +6,7 @@ using namespace std;
 #include "Graph.h"
 #include "Helpers.h"
 
-using namespace api::Graphs;
+using namespace Gina::Graphs;
 using namespace std;
 
 

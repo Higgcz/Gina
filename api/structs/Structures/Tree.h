@@ -12,14 +12,14 @@
 #include <iostream>
 #include <deque>
 
-namespace api {
+namespace Gina {
     namespace Structures {
         struct Node;
         class Tree;
     }
 }
 
-struct api::Structures::Node {
+struct Gina::Structures::Node {
     int key;
     int value;
     Node *parent;
@@ -49,7 +49,7 @@ struct api::Structures::Node {
     bool operator!= ( const Node &n ) { return key != n.key; }
 };
 
-class api::Structures::Tree {
+class Gina::Structures::Tree {
 
 protected:
     Node *root;

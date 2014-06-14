@@ -11,7 +11,7 @@
 
 #include <iostream>
 
-namespace api {
+namespace Gina {
     namespace Map {
         template < typename K >
             struct DefaultHashFunction;
@@ -23,7 +23,7 @@ namespace api {
 }
 
 template < >
-struct api::Map::DefaultHashFunction<int> {
+struct Gina::Map::DefaultHashFunction<int> {
     unsigned long operator() ( const int &key ) const
     {
         return key;
@@ -31,7 +31,7 @@ struct api::Map::DefaultHashFunction<int> {
 };
 
 template < >
-struct api::Map::DefaultHashFunction<std::string> {
+struct Gina::Map::DefaultHashFunction<std::string> {
     unsigned long operator() ( const std::string &key ) const
     {
         unsigned long n = 5381UL;
@@ -45,7 +45,7 @@ struct api::Map::DefaultHashFunction<std::string> {
 };
 
 template < typename K >
-struct api::Map::DefaultHashFunction {
+struct Gina::Map::DefaultHashFunction {
     unsigned long operator() ( const K &key ) const
     {
         return reinterpret_cast<unsigned long> ( key );
@@ -53,7 +53,7 @@ struct api::Map::DefaultHashFunction {
 };
 
 template < typename K, typename V >
-struct api::Map::HashNode {
+struct Gina::Map::HashNode {
     K           key;
     V           value;
     HashNode*   next;
@@ -73,7 +73,7 @@ struct api::Map::HashNode {
 };
 
 template < typename K, typename V, typename F >
-class api::Map::HashMap {
+class Gina::Map::HashMap {
     
     HashNode <K, V> ** _map;
     F                  _hashFunction;
